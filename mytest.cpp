@@ -11,7 +11,7 @@ int main(int argc, char ** argv)
 
 	printf("Give me your first and last name.....\n");
 
-	cin>>first>>last;
+	//cin>>first>>last;
 	
 	while(cin>>name)
 	{
@@ -23,6 +23,8 @@ int main(int argc, char ** argv)
 		{
 			last = name;	
 		}
+		
+		num++;
 	}
 
 	printf("Thanks %s %s!!\n", first.c_str(), last.c_str() );
