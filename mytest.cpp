@@ -7,13 +7,25 @@ using namespace std;
 int main(int argc, char ** argv)
 {
 	int num = 0; 
-	string bob, first, last;
-
-	char * name;
+	string name = "", first, last;
 
 	printf("Give me your first and last name.....\n");
 
-	cin>>first>>last;
+	//cin>>first>>last;
+	
+	while(cin>>name)
+	{
+		if( num == 0)
+		{
+			first = name;
+		}
+		else if( num == 1)
+		{
+			last = name;	
+		}
+		
+		num++;
+	}
 
 	printf("Thanks %s %s!!\n", first.c_str(), last.c_str() );
 
